@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,13 +10,18 @@
     // Prompt the user for passcode input
     var passcode = prompt(String.fromCharCode(69, 110, 116, 101, 114, 32, 116, 104, 101, 32, 112, 97, 115, 115, 99, 111, 100, 101, 58));
 
+    // Define the correct passcode
+    var correctPasscode = "your_passcode_here";
+
     // Check if the passcode is correct
-    if (passcode === String.fromCharCode(64, 36, 58, 56, 59)) {
-      // Redirect to another page
-      window.location.href = String.fromCharCode(104, 116, 116, 112, 115, 58, 47, 47, 112, 117, 114, 101, 112, 114, 111, 120, 46, 103, 105, 116, 104, 117, 98, 46, 105, 111, 47, 97, 100, 109, 105, 110, 46, 104, 116, 109, 108);
-    } else {
-      alert(String.fromCharCode(73, 110, 99, 111, 114, 114, 101, 99, 116, 32, 112, 97, 115, 115, 99, 111, 100, 101));
+    if (passcode !== correctPasscode) {
+      // If incorrect, redirect to another page
+      window.location.href = "https://redirect_page_url.com";
     }
   </script>
+  
+  <h2>Welcome to the secret page!</h2>
+  <p>Here, you can browse and enjoy the content to your heart's content.</p>
+  <p>Feel free to explore and have a great time!</p>
 </body>
 </html>
